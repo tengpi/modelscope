@@ -23,13 +23,13 @@ def parse_args():
     parser.add_argument(
         "--model_path",
         type=str,
-        default="/mnt/workspace/. cache/modelscope/models/qwen/Qwen2-1.5B-Instruct",
+        default="/mnt/workspace/.cache/modelscope/hub/models/Qwen/Qwen2.5-1.5B-Instruct",
         help="本地模型路径"
     )
     parser.add_argument(
         "--data_prefix",
         type=str,
-        default="/mnt/workspace/modelscope/data/",
+        default="/mnt/workspace/projects/modelscope/data/",
         help="数据集文件路径前缀"
     )
     parser.add_argument(

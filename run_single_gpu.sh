@@ -5,9 +5,9 @@
 export CUDA_VISIBLE_DEVICES=0
 
 deepspeed --num_gpus=1 train_lora_deepspeed.py \
-    --model_path /mnt/workspace/.cache/modelscope/models/qwen/Qwen2-1.5B-Instruct \
-    --data_prefix /mnt/workspace/modelscope/data/ \
-    --output_dir ./qwen2-1.5b-en2zh-qlora-deepspeed \
+    --model_path /mnt/workspace/.cache/modelscope/hub/models/Qwen/Qwen2.5-1.5B-Instruct \
+    --data_prefix /mnt/workspace/projects/modelscope/data/ \
+    --output_dir ./qwen2-1.5b-en2zh-qlora-deepspeed-1k \
     --num_samples 1000 \
     --per_device_train_batch_size 1 \
     --gradient_accumulation_steps 4 \
